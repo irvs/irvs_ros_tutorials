@@ -1,5 +1,5 @@
 #include "ros/ros.h"                        // ROSメインヘッダーファイル
-#include "rostms_tutorial_basic/srvTutorial.h" // srvTutorial サービスファイルのヘッダー（ビルド後に自動的に生成される）
+#include "irvs_ros_tutorials/srvTutorial.h" // srvTutorial サービスファイルのヘッダー（ビルド後に自動的に生成される）
 #include <cstdlib>
 
 int main(int argc, char **argv)                     // ノードのメイン関数
@@ -14,12 +14,12 @@ int main(int argc, char **argv)                     // ノードのメイン関�
 
   ros::NodeHandle nh;   // ROSシステムとの通信のためのノードのハンドルを宣言
 
-  // サービスクライアントを宣言し、 rostms_tutorial_basicパッケージのsrvTutorialサービスファイルを利用した
+  // サービスクライアントを宣言し、 irvs_ros_tutorialsパッケージのsrvTutorialサービスファイルを利用した
   // サービスクライアントros_tutorial_service_clientを作成する。サービス名は「 ros_tutorial_srv 」である
-  ros::ServiceClient ros_tutorial_service_client = nh.serviceClient<rostms_tutorial_basic::srvTutorial>("ros_tutorial_srv");
+  ros::ServiceClient ros_tutorial_service_client = nh.serviceClient<irvs_ros_tutorials::srvTutorial>("ros_tutorial_srv");
 
   // srvという名前でsrvTutorialサービス·ファイルを使用するサービス·ファイルを宣言する
-  rostms_tutorial_basic::srvTutorial srv;
+  irvs_ros_tutorials::srvTutorial srv;
 
   // サービスの要求値にノードが実行されるときに、入力として使用されたパラメータを、それぞれのa 、bに格納する
   srv.request.a = atof(argv[1]);

@@ -1,5 +1,5 @@
 #include "ros/ros.h"                            // ROSメインヘッダーファイル
-#include "rostms_tutorial_basic/srvTutorial.h"  // srvTutorial サービスファイルのヘッダー（ビルド後に自動的に生成される）
+#include "irvs_ros_tutorials/srvTutorial.h"  // srvTutorial サービスファイルのヘッダー（ビルド後に自動的に生成される）
 
 #define PLUS           1    // 加算
 #define MINUS          2    // 減算
@@ -10,8 +10,8 @@ int g_operator = PLUS;
 
 // サービスの要求があった場合は、以下の処理を実行する
 // サービス要求は、 res 、サービスの応答は、 reqに設定した
-bool calculation(rostms_tutorial_basic::srvTutorial::Request  &req,
-                 rostms_tutorial_basic::srvTutorial::Response &res)
+bool calculation(irvs_ros_tutorials::srvTutorial::Request  &req,
+                 irvs_ros_tutorials::srvTutorial::Response &res)
 {
   // サービスリクエストを受けたaとbの値をパラメータ値に基づいて演算子を異にする。
   // 計算した後、サービスの応答値に保存する
