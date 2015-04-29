@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <name>irvs_ros_tutorials</name>
+  <version>0.1.1</version>
+  <license>BSD</license>
+  <description>The irvs_ros_tutorials package</description>
+
+  <maintainer email="passionvirus@gmail.com">Yoonseok Pyo</maintainer>
+
+  <url type="website">http://robotics.ait.kyushu-u.ac.jp/index-e.html</url>
+  <url type="git">https://github.com/irvs/irvs_ros_tutorials</url>
+
+  <author email="passionvirus@gmail.com">Yoonseok Pyo</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export>
+  </export>
+</package>
