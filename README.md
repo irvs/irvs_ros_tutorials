@@ -1,4 +1,4 @@
-rostms_tutorial_basic
+irvs_ros_tutorials
 ===================
 
-ros tutorials for rostms members
+ros tutorials
