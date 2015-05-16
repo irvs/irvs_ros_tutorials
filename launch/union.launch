@@ -1,16 +1,16 @@
 <launch>
 
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
     
   <group ns="ns1">
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
   </group>
 
   <group ns="ns2">
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
-    <node pkg="rostms_tutorial_basic" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_publisher" name="msg_publisher"/>
+    <node pkg="irvs_ros_tutorials" type="ros_tutorial_msg_subscriber" name="msg_subscriber"/>
   </group>
 
 </launch>
